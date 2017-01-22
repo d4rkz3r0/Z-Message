@@ -19,6 +19,7 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var QualityButton: UIButton!
     
     var isHQSelected : Bool!;
+    var imgUUID : String! = NSUUID().uuidString;
     
     //VC UI Helpers
     var imagePicker = UIImagePickerController();
@@ -29,10 +30,9 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
     {
         super.viewDidLoad()
 
-        
         QualityButton.setTitle("HQ", for: UIControlState.normal);
         isHQSelected = true;
-        NextButton.isEnabled = true;
+        NextButton.isEnabled = false;
         
         imagePicker.delegate = self;
     }
@@ -41,7 +41,7 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
     @IBAction func CameraPressed(_ sender: Any)
     {
         //Image Picker's Source
-        imagePicker.sourceType = .savedPhotosAlbum;
+        imagePicker.sourceType = .camera;
         imagePicker.allowsEditing = false;
         
         //Show to user
@@ -60,6 +60,9 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
         //Clear BG Color
         ImageView.backgroundColor = UIColor.clear;
         
+        //Enable Next Button
+        NextButton.isEnabled = true;
+        
         //Pop ImagePicker
         imagePicker.dismiss(animated: true, completion: nil);
     }
@@ -73,15 +76,17 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
         
         //Move into server images folder.
         let imagesFolder = FIRStorage.storage().reference().child("messageImages");
-        
-        
+  
         if(isHQSelected == true)
         {
             //Grab UIImage from ImageView and convert to .png.
             let imageData = UIImagePNGRepresentation(ImageView.image!)!;
             
             //Create new image to store in the server folder.
-            imagesFolder.child("\(NSUUID().uuidString)" + ".png").put(imageData, metadata: nil, completion:
+            
+            let imgUUID = "\(self.imgUUID!)" + ".png";
+            
+            imagesFolder.child(imgUUID).put(imageData, metadata: nil, completion:
                 { (metadata, err) in
                     print("Attempting image upload to FireBase.");
                     
@@ -92,9 +97,9 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
                     }
                     else
                     {
-                        print("Image successfully uploaded to: \(metadata!.downloadURL()!)");
+                        print("Image successfully uploaded.");
                         //Present contacts to send image/text to.
-                        self.performSegue(withIdentifier: "SelectUserSegue", sender: nil);
+                        self.performSegue(withIdentifier: "SelectUserSegue", sender: metadata!.downloadURL()!.absoluteString);
                     }
             });
 
@@ -106,7 +111,9 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
             let imageData = UIImageJPEGRepresentation(ImageView.image!, jpgCompressionLevel)!;
             
             //Create new image to store in the server folder.
-            imagesFolder.child("\(NSUUID().uuidString)" + ".jpg").put(imageData, metadata: nil, completion:
+            let imgUUID = "\(self.imgUUID!)" + ".jpg";
+            
+            imagesFolder.child(imgUUID).put(imageData, metadata: nil, completion:
                 { (metadata, err) in
                     print("Attempting image upload to FireBase.");
                     
@@ -117,16 +124,16 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
                     }
                     else
                     {
-                        print("Image successfully uploaded to: \(metadata!.downloadURL()!)");
+                        print("Image successfully uploaded.");
                         //Present contacts to send image/text to.
-                        self.performSegue(withIdentifier: "SelectUserSegue", sender: nil);
+                        self.performSegue(withIdentifier: "SelectUserSegue", sender: metadata!.downloadURL()!.absoluteString);
                     }
             });
 
         }
-        
-        
-            }
+    }
+    
+    
     @IBAction func QualityButtonPressed(_ sender: Any)
     {
         isHQSelected = !isHQSelected;
@@ -142,10 +149,17 @@ class MessageCreateViewController: UIViewController, UIImagePickerControllerDele
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        
-        
+        let nextVC = segue.destination as! SelectUserViewController;
+        nextVC.msgText = MessageTextField.text!;
+        nextVC.imgUrl = sender as! String;
+        nextVC.imgUUID = self.imgUUID;
+        if(isHQSelected == true)
+        {
+            nextVC.isImgHQ = "y";
+        }
+        else
+        {
+            nextVC.isImgHQ = "n";
+        }
     }
-    
-    
-    
 }

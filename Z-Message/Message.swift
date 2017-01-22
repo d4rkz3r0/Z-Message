@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Message
+{
+    var imgUrl : String = "";
+    var msgText : String = "";
+    var sender : String = "";
+    var messageID : String = "";
+    var imgUUID : String = "";
+    var isImgHQ : String = "";
+}

@@ -68,10 +68,52 @@
             </objects>
             <point key="canvasLocation" x="138.75" y="135.21126760563379"/>
         </scene>
+        <!--Message Display View Controller-->
+        <scene sceneID="xKs-o1-UBb">
+            <objects>
+                <viewController id="D4b-XQ-6PD" userLabel="Message Display View Controller" customClass="ViewMessageViewController" customModule="Z_Message" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lgb-Bf-zMr"/>
+                        <viewControllerLayoutGuide type="bottom" id="hR8-8d-T2Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="US9-Gx-cRC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9J-w8-KKg" userLabel="Message Text Label">
+                                <rect key="frame" x="26" y="537" width="268" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="btH-g9-Psx">
+                                <rect key="frame" x="26" y="74" width="268" height="453"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e9J-w8-KKg" firstAttribute="leading" secondItem="US9-Gx-cRC" secondAttribute="leadingMargin" constant="10" id="65o-35-IDp"/>
+                            <constraint firstItem="btH-g9-Psx" firstAttribute="top" secondItem="Lgb-Bf-zMr" secondAttribute="bottom" constant="10" id="DeP-Tl-dKX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e9J-w8-KKg" secondAttribute="trailing" constant="10" id="Ea5-AO-nvf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="btH-g9-Psx" secondAttribute="trailing" constant="10" id="GE0-Xz-N3G"/>
+                            <constraint firstItem="hR8-8d-T2Y" firstAttribute="top" secondItem="e9J-w8-KKg" secondAttribute="bottom" constant="10" id="MYh-3d-uib"/>
+                            <constraint firstItem="btH-g9-Psx" firstAttribute="leading" secondItem="US9-Gx-cRC" secondAttribute="leadingMargin" constant="10" id="vzO-FN-huX"/>
+                            <constraint firstItem="e9J-w8-KKg" firstAttribute="top" secondItem="btH-g9-Psx" secondAttribute="bottom" constant="10" id="wJh-sz-3Ly"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="btH-g9-Psx" id="llA-rf-uDF"/>
+                        <outlet property="messageTextLabel" destination="e9J-w8-KKg" id="vnB-qk-NkF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8L7-Kr-0b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="864"/>
+        </scene>
         <!--Messages View Controller-->
         <scene sceneID="LOj-gP-6tF">
             <objects>
-                <viewController id="q4J-3x-ox7" customClass="MessagesViewController" customModule="Z_Message" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="q4J-3x-ox7" customClass="MessagesViewController" customModule="Z_Message" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wWI-lM-zNP"/>
                         <viewControllerLayoutGuide type="bottom" id="s74-Ku-ZRV"/>
@@ -79,7 +121,19 @@
                     <view key="view" contentMode="scaleToFill" id="c4m-dV-35M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EMA-IP-0yQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EMA-IP-0yQ" secondAttribute="trailing" id="AbW-yt-Une"/>
+                            <constraint firstItem="s74-Ku-ZRV" firstAttribute="top" secondItem="EMA-IP-0yQ" secondAttribute="bottom" id="JkM-LC-Vks"/>
+                            <constraint firstItem="EMA-IP-0yQ" firstAttribute="top" secondItem="wWI-lM-zNP" secondAttribute="bottom" id="NGW-D3-4bo"/>
+                            <constraint firstItem="EMA-IP-0yQ" firstAttribute="leading" secondItem="c4m-dV-35M" secondAttribute="leading" id="sMI-NE-lGH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rto-V1-Rsu">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="dOS-aG-t7j">
@@ -93,6 +147,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="EMA-IP-0yQ" id="3ao-Mw-cpe"/>
+                        <segue destination="D4b-XQ-6PD" kind="show" identifier="ViewMessageSegue" id="HsN-Dv-R2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zy2-Og-Ka9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,6 +247,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Hsw-wx-Lb9" secondAttribute="trailing" id="pNV-nO-J06"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Hsw-wx-Lb9" id="Poo-n8-RZH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBv-6h-i0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

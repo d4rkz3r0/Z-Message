@@ -17,6 +17,14 @@ class LoginViewController: UIViewController
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
 
+    
+    // Init
+    override func viewDidLoad()
+    {
+        super.viewDidLoad();
+    }
+    
+    
     // FireBase Signin/Acc Creation
     @IBAction func LogInButtonPressed(_ sender: Any)
     {
@@ -24,16 +32,17 @@ class LoginViewController: UIViewController
         FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
         
             // On Completion Code Block
-            print("Attempting Sign in.");
+            print("Attempting User Sign in...");
             
             if(error != nil)
             {
-                print("Sign in failed, user does not exist, or invalid login credentials.");
+                print("Sign in failed, user does not exist, or login credentials were invalid.");
                 
                 //Create User Acc
+                print("Creating user..");
                 FIRAuth.auth()?.createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
                 
-                    print("Creating user..");
+                    
                     
                     if(error != nil)
                     {
@@ -41,8 +50,15 @@ class LoginViewController: UIViewController
                     }
                     else
                     {
-                        print("User was created.");
+                        print("User was succesfully created.");
                         
+                        // Generate unique ID for each new user and store their email address.
+                        //Access FireBase Database
+                        //Set it's 1st available child to be the user's unique ID.
+                        //Add a child to the unique user ID so their email address can be stored in it.
+                        FIRDatabase.database().reference().child("users").child(user!.uid).child("emailAddress").setValue(user!.email);
+                        
+                        print("Signing in new user...");
                         //After Successful User Creation...
                         self.performSegue(withIdentifier: "SignInSegue", sender: nil);
                     }
@@ -58,18 +74,11 @@ class LoginViewController: UIViewController
         });
     }
     
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+    // Misc
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 

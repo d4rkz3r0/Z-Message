@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		64DE6758CFEAC56B7A7D2919 /* Pods_Z_Message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F605306350A584BA2D71CDE0 /* Pods_Z_Message.framework */; };
 		BE1C9E5F1E1C66F60057C340 /* MessageCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C9E5E1E1C66F60057C340 /* MessageCreateViewController.swift */; };
+		BE3202D01E34E07D0006462E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3202CF1E34E07D0006462E /* Message.swift */; };
+		BE3202D21E34E99B0006462E /* ViewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3202D11E34E99B0006462E /* ViewMessageViewController.swift */; };
 		BE3B4D721E0DAFB000AC3108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4D711E0DAFB000AC3108 /* AppDelegate.swift */; };
 		BE3B4D741E0DAFB000AC3108 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4D731E0DAFB000AC3108 /* LogInViewController.swift */; };
 		BE3B4D771E0DAFB000AC3108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4D751E0DAFB000AC3108 /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		BE3B4D7C1E0DAFB000AC3108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4D7A1E0DAFB000AC3108 /* LaunchScreen.storyboard */; };
 		BE8E4AF71E15A8DD00FA3D7B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E4AF61E15A8DC00FA3D7B /* MessagesViewController.swift */; };
 		BE9233F31E34A9EC003E3FCB /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9233F21E34A9EC003E3FCB /* SelectUserViewController.swift */; };
+		BE9233F51E34C489003E3FCB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9233F41E34C489003E3FCB /* User.swift */; };
 		BE9F50D41E12FBA600C78B91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE9F50D31E12FBA600C78B91 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,8 @@
 		209EF0A16258ED10B851B1D6 /* Pods-Z-Message.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z-Message.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Z-Message/Pods-Z-Message.debug.xcconfig"; sourceTree = "<group>"; };
 		B92E8481C98513ADF4AD2B36 /* Pods-Z-Message.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z-Message.release.xcconfig"; path = "Pods/Target Support Files/Pods-Z-Message/Pods-Z-Message.release.xcconfig"; sourceTree = "<group>"; };
 		BE1C9E5E1E1C66F60057C340 /* MessageCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCreateViewController.swift; sourceTree = "<group>"; };
+		BE3202CF1E34E07D0006462E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BE3202D11E34E99B0006462E /* ViewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMessageViewController.swift; sourceTree = "<group>"; };
 		BE3B4D6E1E0DAFB000AC3108 /* Z-Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Z-Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3B4D711E0DAFB000AC3108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3B4D731E0DAFB000AC3108 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		BE3B4D7D1E0DAFB000AC3108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8E4AF61E15A8DC00FA3D7B /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		BE9233F21E34A9EC003E3FCB /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		BE9233F41E34C489003E3FCB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BE9F50D31E12FBA600C78B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F605306350A584BA2D71CDE0 /* Pods_Z_Message.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z_Message.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,18 +92,37 @@
 		BE3B4D701E0DAFB000AC3108 /* Z-Message */ = {
 			isa = PBXGroup;
 			children = (
-				BE1C9E5E1E1C66F60057C340 /* MessageCreateViewController.swift */,
-				BE3B4D711E0DAFB000AC3108 /* AppDelegate.swift */,
-				BE3B4D731E0DAFB000AC3108 /* LogInViewController.swift */,
+				BE9233F61E34C4B7003E3FCB /* ViewControllers */,
+				BE9233F71E34C509003E3FCB /* Models */,
 				BE3B4D751E0DAFB000AC3108 /* Main.storyboard */,
-				BE9233F21E34A9EC003E3FCB /* SelectUserViewController.swift */,
-				BE8E4AF61E15A8DC00FA3D7B /* MessagesViewController.swift */,
 				BE3B4D781E0DAFB000AC3108 /* Assets.xcassets */,
 				BE3B4D7A1E0DAFB000AC3108 /* LaunchScreen.storyboard */,
 				BE3B4D7D1E0DAFB000AC3108 /* Info.plist */,
 				BE9F50D31E12FBA600C78B91 /* GoogleService-Info.plist */,
+				BE3B4D711E0DAFB000AC3108 /* AppDelegate.swift */,
 			);
 			path = "Z-Message";
+			sourceTree = "<group>";
+		};
+		BE9233F61E34C4B7003E3FCB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE1C9E5E1E1C66F60057C340 /* MessageCreateViewController.swift */,
+				BE3B4D731E0DAFB000AC3108 /* LogInViewController.swift */,
+				BE9233F21E34A9EC003E3FCB /* SelectUserViewController.swift */,
+				BE8E4AF61E15A8DC00FA3D7B /* MessagesViewController.swift */,
+				BE3202D11E34E99B0006462E /* ViewMessageViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE9233F71E34C509003E3FCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE9233F41E34C489003E3FCB /* User.swift */,
+				BE3202CF1E34E07D0006462E /* Message.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,10 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1C9E5F1E1C66F60057C340 /* MessageCreateViewController.swift in Sources */,
+				BE3202D21E34E99B0006462E /* ViewMessageViewController.swift in Sources */,
 				BE8E4AF71E15A8DD00FA3D7B /* MessagesViewController.swift in Sources */,
+				BE9233F51E34C489003E3FCB /* User.swift in Sources */,
 				BE9233F31E34A9EC003E3FCB /* SelectUserViewController.swift in Sources */,
 				BE3B4D741E0DAFB000AC3108 /* LogInViewController.swift in Sources */,
 				BE3B4D721E0DAFB000AC3108 /* AppDelegate.swift in Sources */,
+				BE3202D01E34E07D0006462E /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

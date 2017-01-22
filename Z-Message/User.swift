@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class User
+{
+    var emailAddress : String = "";
+    var userID : String = "";
+    
+}
