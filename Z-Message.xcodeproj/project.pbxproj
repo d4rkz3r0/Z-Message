@@ -9,12 +9,35 @@
 /* Begin PBXBuildFile section */
 		64DE6758CFEAC56B7A7D2919 /* Pods_Z_Message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F605306350A584BA2D71CDE0 /* Pods_Z_Message.framework */; };
 		BE1C9E5F1E1C66F60057C340 /* MessageCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1C9E5E1E1C66F60057C340 /* MessageCreateViewController.swift */; };
+		BE21C6751E35144600BA2D33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6741E35144600BA2D33 /* Images.xcassets */; };
+		BE21C68E1E3514CD00BA2D33 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6771E3514CD00BA2D33 /* Contents.json */; };
+		BE21C68F1E3514CD00BA2D33 /* Icon-App-20x20@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6781E3514CD00BA2D33 /* Icon-App-20x20@1x.png.png */; };
+		BE21C6901E3514CD00BA2D33 /* Icon-App-20x20@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6791E3514CD00BA2D33 /* Icon-App-20x20@2x.png.png */; };
+		BE21C6911E3514CD00BA2D33 /* Icon-App-20x20@3x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C67A1E3514CD00BA2D33 /* Icon-App-20x20@3x.png.png */; };
+		BE21C6921E3514CD00BA2D33 /* Icon-App-29x29@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C67B1E3514CD00BA2D33 /* Icon-App-29x29@1x.png.png */; };
+		BE21C6931E3514CD00BA2D33 /* Icon-App-29x29@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C67C1E3514CD00BA2D33 /* Icon-App-29x29@2x.png.png */; };
+		BE21C6941E3514CD00BA2D33 /* Icon-App-29x29@3x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C67D1E3514CD00BA2D33 /* Icon-App-29x29@3x.png.png */; };
+		BE21C6951E3514CD00BA2D33 /* Icon-App-40x40@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C67E1E3514CD00BA2D33 /* Icon-App-40x40@1x.png.png */; };
+		BE21C6961E3514CD00BA2D33 /* Icon-App-40x40@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C67F1E3514CD00BA2D33 /* Icon-App-40x40@2x.png.png */; };
+		BE21C6971E3514CD00BA2D33 /* Icon-App-40x40@3x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6801E3514CD00BA2D33 /* Icon-App-40x40@3x.png.png */; };
+		BE21C6981E3514CD00BA2D33 /* Icon-App-57x57@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6811E3514CD00BA2D33 /* Icon-App-57x57@1x.png.png */; };
+		BE21C6991E3514CD00BA2D33 /* Icon-App-57x57@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6821E3514CD00BA2D33 /* Icon-App-57x57@2x.png.png */; };
+		BE21C69A1E3514CD00BA2D33 /* Icon-App-60x60@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6831E3514CD00BA2D33 /* Icon-App-60x60@1x.png.png */; };
+		BE21C69B1E3514CD00BA2D33 /* Icon-App-60x60@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6841E3514CD00BA2D33 /* Icon-App-60x60@2x.png.png */; };
+		BE21C69C1E3514CD00BA2D33 /* Icon-App-60x60@3x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6851E3514CD00BA2D33 /* Icon-App-60x60@3x.png.png */; };
+		BE21C69D1E3514CD00BA2D33 /* Icon-App-72x72@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6861E3514CD00BA2D33 /* Icon-App-72x72@1x.png.png */; };
+		BE21C69E1E3514CD00BA2D33 /* Icon-App-72x72@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6871E3514CD00BA2D33 /* Icon-App-72x72@2x.png.png */; };
+		BE21C69F1E3514CD00BA2D33 /* Icon-App-76x76@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6881E3514CD00BA2D33 /* Icon-App-76x76@1x.png.png */; };
+		BE21C6A01E3514CD00BA2D33 /* Icon-App-76x76@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C6891E3514CD00BA2D33 /* Icon-App-76x76@2x.png.png */; };
+		BE21C6A11E3514CD00BA2D33 /* Icon-App-76x76@3x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C68A1E3514CD00BA2D33 /* Icon-App-76x76@3x.png.png */; };
+		BE21C6A21E3514CD00BA2D33 /* Icon-App-83.5x83.5@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C68B1E3514CD00BA2D33 /* Icon-App-83.5x83.5@2x.png.png */; };
+		BE21C6A31E3514CD00BA2D33 /* Icon-Small-50x50@1x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C68C1E3514CD00BA2D33 /* Icon-Small-50x50@1x.png.png */; };
+		BE21C6A41E3514CD00BA2D33 /* Icon-Small-50x50@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = BE21C68D1E3514CD00BA2D33 /* Icon-Small-50x50@2x.png.png */; };
 		BE3202D01E34E07D0006462E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3202CF1E34E07D0006462E /* Message.swift */; };
 		BE3202D21E34E99B0006462E /* ViewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3202D11E34E99B0006462E /* ViewMessageViewController.swift */; };
 		BE3B4D721E0DAFB000AC3108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4D711E0DAFB000AC3108 /* AppDelegate.swift */; };
 		BE3B4D741E0DAFB000AC3108 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B4D731E0DAFB000AC3108 /* LogInViewController.swift */; };
 		BE3B4D771E0DAFB000AC3108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4D751E0DAFB000AC3108 /* Main.storyboard */; };
-		BE3B4D791E0DAFB000AC3108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4D781E0DAFB000AC3108 /* Assets.xcassets */; };
 		BE3B4D7C1E0DAFB000AC3108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3B4D7A1E0DAFB000AC3108 /* LaunchScreen.storyboard */; };
 		BE8E4AF71E15A8DD00FA3D7B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8E4AF61E15A8DC00FA3D7B /* MessagesViewController.swift */; };
 		BE9233F31E34A9EC003E3FCB /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9233F21E34A9EC003E3FCB /* SelectUserViewController.swift */; };
@@ -26,13 +49,36 @@
 		209EF0A16258ED10B851B1D6 /* Pods-Z-Message.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z-Message.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Z-Message/Pods-Z-Message.debug.xcconfig"; sourceTree = "<group>"; };
 		B92E8481C98513ADF4AD2B36 /* Pods-Z-Message.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z-Message.release.xcconfig"; path = "Pods/Target Support Files/Pods-Z-Message/Pods-Z-Message.release.xcconfig"; sourceTree = "<group>"; };
 		BE1C9E5E1E1C66F60057C340 /* MessageCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCreateViewController.swift; sourceTree = "<group>"; };
+		BE21C6741E35144600BA2D33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE21C6771E3514CD00BA2D33 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		BE21C6781E3514CD00BA2D33 /* Icon-App-20x20@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png.png"; sourceTree = "<group>"; };
+		BE21C6791E3514CD00BA2D33 /* Icon-App-20x20@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png.png"; sourceTree = "<group>"; };
+		BE21C67A1E3514CD00BA2D33 /* Icon-App-20x20@3x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png.png"; sourceTree = "<group>"; };
+		BE21C67B1E3514CD00BA2D33 /* Icon-App-29x29@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png.png"; sourceTree = "<group>"; };
+		BE21C67C1E3514CD00BA2D33 /* Icon-App-29x29@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png.png"; sourceTree = "<group>"; };
+		BE21C67D1E3514CD00BA2D33 /* Icon-App-29x29@3x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png.png"; sourceTree = "<group>"; };
+		BE21C67E1E3514CD00BA2D33 /* Icon-App-40x40@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png.png"; sourceTree = "<group>"; };
+		BE21C67F1E3514CD00BA2D33 /* Icon-App-40x40@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png.png"; sourceTree = "<group>"; };
+		BE21C6801E3514CD00BA2D33 /* Icon-App-40x40@3x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png.png"; sourceTree = "<group>"; };
+		BE21C6811E3514CD00BA2D33 /* Icon-App-57x57@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@1x.png.png"; sourceTree = "<group>"; };
+		BE21C6821E3514CD00BA2D33 /* Icon-App-57x57@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@2x.png.png"; sourceTree = "<group>"; };
+		BE21C6831E3514CD00BA2D33 /* Icon-App-60x60@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png.png"; sourceTree = "<group>"; };
+		BE21C6841E3514CD00BA2D33 /* Icon-App-60x60@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png.png"; sourceTree = "<group>"; };
+		BE21C6851E3514CD00BA2D33 /* Icon-App-60x60@3x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png.png"; sourceTree = "<group>"; };
+		BE21C6861E3514CD00BA2D33 /* Icon-App-72x72@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@1x.png.png"; sourceTree = "<group>"; };
+		BE21C6871E3514CD00BA2D33 /* Icon-App-72x72@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-72x72@2x.png.png"; sourceTree = "<group>"; };
+		BE21C6881E3514CD00BA2D33 /* Icon-App-76x76@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png.png"; sourceTree = "<group>"; };
+		BE21C6891E3514CD00BA2D33 /* Icon-App-76x76@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png.png"; sourceTree = "<group>"; };
+		BE21C68A1E3514CD00BA2D33 /* Icon-App-76x76@3x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png.png"; sourceTree = "<group>"; };
+		BE21C68B1E3514CD00BA2D33 /* Icon-App-83.5x83.5@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png.png"; sourceTree = "<group>"; };
+		BE21C68C1E3514CD00BA2D33 /* Icon-Small-50x50@1x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@1x.png.png"; sourceTree = "<group>"; };
+		BE21C68D1E3514CD00BA2D33 /* Icon-Small-50x50@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@2x.png.png"; sourceTree = "<group>"; };
 		BE3202CF1E34E07D0006462E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BE3202D11E34E99B0006462E /* ViewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMessageViewController.swift; sourceTree = "<group>"; };
 		BE3B4D6E1E0DAFB000AC3108 /* Z-Message.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Z-Message.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3B4D711E0DAFB000AC3108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3B4D731E0DAFB000AC3108 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		BE3B4D761E0DAFB000AC3108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE3B4D781E0DAFB000AC3108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3B4D7B1E0DAFB000AC3108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3B4D7D1E0DAFB000AC3108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8E4AF61E15A8DC00FA3D7B /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +117,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BE21C6761E3514CD00BA2D33 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				BE21C6771E3514CD00BA2D33 /* Contents.json */,
+				BE21C6781E3514CD00BA2D33 /* Icon-App-20x20@1x.png.png */,
+				BE21C6791E3514CD00BA2D33 /* Icon-App-20x20@2x.png.png */,
+				BE21C67A1E3514CD00BA2D33 /* Icon-App-20x20@3x.png.png */,
+				BE21C67B1E3514CD00BA2D33 /* Icon-App-29x29@1x.png.png */,
+				BE21C67C1E3514CD00BA2D33 /* Icon-App-29x29@2x.png.png */,
+				BE21C67D1E3514CD00BA2D33 /* Icon-App-29x29@3x.png.png */,
+				BE21C67E1E3514CD00BA2D33 /* Icon-App-40x40@1x.png.png */,
+				BE21C67F1E3514CD00BA2D33 /* Icon-App-40x40@2x.png.png */,
+				BE21C6801E3514CD00BA2D33 /* Icon-App-40x40@3x.png.png */,
+				BE21C6811E3514CD00BA2D33 /* Icon-App-57x57@1x.png.png */,
+				BE21C6821E3514CD00BA2D33 /* Icon-App-57x57@2x.png.png */,
+				BE21C6831E3514CD00BA2D33 /* Icon-App-60x60@1x.png.png */,
+				BE21C6841E3514CD00BA2D33 /* Icon-App-60x60@2x.png.png */,
+				BE21C6851E3514CD00BA2D33 /* Icon-App-60x60@3x.png.png */,
+				BE21C6861E3514CD00BA2D33 /* Icon-App-72x72@1x.png.png */,
+				BE21C6871E3514CD00BA2D33 /* Icon-App-72x72@2x.png.png */,
+				BE21C6881E3514CD00BA2D33 /* Icon-App-76x76@1x.png.png */,
+				BE21C6891E3514CD00BA2D33 /* Icon-App-76x76@2x.png.png */,
+				BE21C68A1E3514CD00BA2D33 /* Icon-App-76x76@3x.png.png */,
+				BE21C68B1E3514CD00BA2D33 /* Icon-App-83.5x83.5@2x.png.png */,
+				BE21C68C1E3514CD00BA2D33 /* Icon-Small-50x50@1x.png.png */,
+				BE21C68D1E3514CD00BA2D33 /* Icon-Small-50x50@2x.png.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 		BE3B4D651E0DAFB000AC3108 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +171,12 @@
 				BE9233F61E34C4B7003E3FCB /* ViewControllers */,
 				BE9233F71E34C509003E3FCB /* Models */,
 				BE3B4D751E0DAFB000AC3108 /* Main.storyboard */,
-				BE3B4D781E0DAFB000AC3108 /* Assets.xcassets */,
 				BE3B4D7A1E0DAFB000AC3108 /* LaunchScreen.storyboard */,
 				BE3B4D7D1E0DAFB000AC3108 /* Info.plist */,
 				BE9F50D31E12FBA600C78B91 /* GoogleService-Info.plist */,
 				BE3B4D711E0DAFB000AC3108 /* AppDelegate.swift */,
+				BE21C6741E35144600BA2D33 /* Images.xcassets */,
+				BE21C6761E3514CD00BA2D33 /* AppIcon.appiconset */,
 			);
 			path = "Z-Message";
 			sourceTree = "<group>";
@@ -188,10 +265,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE21C6951E3514CD00BA2D33 /* Icon-App-40x40@1x.png.png in Resources */,
+				BE21C69A1E3514CD00BA2D33 /* Icon-App-60x60@1x.png.png in Resources */,
+				BE21C6A21E3514CD00BA2D33 /* Icon-App-83.5x83.5@2x.png.png in Resources */,
+				BE21C68F1E3514CD00BA2D33 /* Icon-App-20x20@1x.png.png in Resources */,
+				BE21C69C1E3514CD00BA2D33 /* Icon-App-60x60@3x.png.png in Resources */,
+				BE21C68E1E3514CD00BA2D33 /* Contents.json in Resources */,
+				BE21C69E1E3514CD00BA2D33 /* Icon-App-72x72@2x.png.png in Resources */,
+				BE21C69F1E3514CD00BA2D33 /* Icon-App-76x76@1x.png.png in Resources */,
+				BE21C6A31E3514CD00BA2D33 /* Icon-Small-50x50@1x.png.png in Resources */,
+				BE21C6961E3514CD00BA2D33 /* Icon-App-40x40@2x.png.png in Resources */,
+				BE21C6A11E3514CD00BA2D33 /* Icon-App-76x76@3x.png.png in Resources */,
+				BE21C69D1E3514CD00BA2D33 /* Icon-App-72x72@1x.png.png in Resources */,
+				BE21C6911E3514CD00BA2D33 /* Icon-App-20x20@3x.png.png in Resources */,
+				BE21C6901E3514CD00BA2D33 /* Icon-App-20x20@2x.png.png in Resources */,
+				BE21C6941E3514CD00BA2D33 /* Icon-App-29x29@3x.png.png in Resources */,
+				BE21C6A01E3514CD00BA2D33 /* Icon-App-76x76@2x.png.png in Resources */,
+				BE21C6981E3514CD00BA2D33 /* Icon-App-57x57@1x.png.png in Resources */,
+				BE21C69B1E3514CD00BA2D33 /* Icon-App-60x60@2x.png.png in Resources */,
 				BE3B4D7C1E0DAFB000AC3108 /* LaunchScreen.storyboard in Resources */,
+				BE21C6921E3514CD00BA2D33 /* Icon-App-29x29@1x.png.png in Resources */,
+				BE21C6A41E3514CD00BA2D33 /* Icon-Small-50x50@2x.png.png in Resources */,
+				BE21C6751E35144600BA2D33 /* Images.xcassets in Resources */,
 				BE9F50D41E12FBA600C78B91 /* GoogleService-Info.plist in Resources */,
-				BE3B4D791E0DAFB000AC3108 /* Assets.xcassets in Resources */,
 				BE3B4D771E0DAFB000AC3108 /* Main.storyboard in Resources */,
+				BE21C6991E3514CD00BA2D33 /* Icon-App-57x57@2x.png.png in Resources */,
+				BE21C6971E3514CD00BA2D33 /* Icon-App-40x40@3x.png.png in Resources */,
+				BE21C6931E3514CD00BA2D33 /* Icon-App-29x29@2x.png.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +481,7 @@
 			baseConfigurationReference = 209EF0A16258ED10B851B1D6 /* Pods-Z-Message.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = SKX4P6BP4Q;
 				INFOPLIST_FILE = "Z-Message/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -395,6 +496,7 @@
 			baseConfigurationReference = B92E8481C98513ADF4AD2B36 /* Pods-Z-Message.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = SKX4P6BP4Q;
 				INFOPLIST_FILE = "Z-Message/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
